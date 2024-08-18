@@ -1,0 +1,224 @@
+/* Settup stuff */
+:root {
+  --primary-color: #ffd000; 
+  --secondary-color: #d5137b; 
+  --tertiary-color: #FF9E00;
+  --accent-color: #1B1464;
+  --background-color: #f4ddc3;
+  --text-color: #3A3B3C; 
+  --color: #d5137b;
+  --size: 0;
+}
+
+.cantarell-regular {
+  font-family: "Cantarell", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bodoni-moda {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+}
+
+/* STYLE TEXT 
+body {
+ background-color: var(--background-color); 
+  padding: 0;
+  margin: 0;
+  height: auto; 
+}
+*/
+
+h1 {
+  color: var(--secondary-color);
+  font-family: Cantarell, sans-serif;
+  text-align: center;
+  font-size: 60px;  
+}
+h3{
+  font-family:Bodoni Moda;
+  color: var(--text-color);
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+p{
+  font-family: Bodoni Moda; 
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: var(--text-color);
+}
+
+ul{
+  color: white;
+  font-family: Cantarell, sans-serif;
+  font-size: 120%;
+  margin: 5%;
+  padding: 9%;
+  font-weight: bold;
+}
+
+
+
+/* STYLE IMAGES */
+img{
+ 
+  max-width: 30%;
+  max-height: 30%;
+  margin-top: 3%;
+  margin-right: 1%;
+  margin-left: 1%;
+  margin-bottom: 3%; 
+  border-radius: 10%;
+ 
+}
+
+.millan{ /*the DIV */ 
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;  
+  
+}
+.millan img{
+  max-width: 60% !important; 
+  max-height: 60% !important; 
+  border: 5px solid var(--accent-color) !important;
+  border-radius: 5%;
+}
+
+
+/*.myDiv {
+  background-color: #d5137b;
+} */ 
+
+.imgContainer {
+  margin-top: 12%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  padding: 1%; /* Adjust padding as needed */
+}
+
+/* STYLE NAVIGATION BAR */
+nav {
+  background-color: var(--tertiary-color);
+  overflow: auto;
+  float: center; 
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-color);
+}
+nav li {
+  float: center; 
+}
+
+nav ul li a {
+  display: block;
+  color: var(--background-color);
+  text-align: center;
+  padding: 3px 20px;
+  text-decoration: none;
+}
+
+
+
+nav ul li a:hover {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+}
+
+nav ul li a.active {
+  /*background-color: #04AA6D; */ 
+  text-decoration: underline;
+  color: var(--secondary-color);; 
+}
+
+
+/* STYLE HEART */
+
+
+* {
+  box-sizing: border-box;
+}
+.heart-container {
+  position: absolute;
+  opacity: 1;
+}
+
+
+.heart {
+  width: var(--size);
+  height: var(--size);
+  transform: rotate(45deg);
+  transform-origin: center;
+  position: relative;
+  background: var(--color);
+  margin: 10px auto;
+}
+.heart:before,
+.heart:after {
+  content: "";
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: var(--color);
+}
+.heart:before {
+  left: calc(var(--size) / 2 * -1);
+}
+.heart:after {
+  top: calc(var(--size) / 2 * -1);
+}
+
+.container {
+  position: absolute; /* Changed from fixed to absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allows mouse events to pass through, enabling scrolling */
+  z-index: 9999; /* Keeps the hearts on top of other content */
+}
+
+.heart-container {
+  position: absolute; /* Ensure hearts are positioned relative to the container */
+  opacity: 1;
+}
+
+body {
+  background-color: var(--background-color); 
+  padding: 0;
+  margin: 0;
+  height: 100%; 
+  overflow-y: scroll; /* Ensure vertical scrolling is enabled */
+}
+
+
+.bhaiya{ /*the DIV */ 
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;  
+
+}
+
+.bhaiya img{
+  max-width: 40% !important; 
+  max-height: 40% !important; 
+  border: 5px solid var(--accent-color) !important;
+  border-radius: 5%;
+  margin: auto 
+}
